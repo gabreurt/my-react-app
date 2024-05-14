@@ -73,7 +73,7 @@ jobs:
       - name: Instalar dependências
         run: npm install
       - name: Rodar testes unitários com Jest
-        run: npm test
+        run: npm test --detectOpenHandles
 
   docker-deployment:
     needs: unit-tests
